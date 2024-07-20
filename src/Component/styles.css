@@ -1,0 +1,87 @@
+/* Styles for the slider container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.arrow-icon {
+  display: block;
+}
+
+/* Hover effect for arrow buttons */
+.arrow:hover {
+  color: #333;
+}
+
+/* Styles for the image container */
+.image-container {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 50px; /* Adjust padding to create space for arrows */
+}
+
+/* Styles for the currently displayed image */
+.current-image {
+  width: 100%;
+  max-width: calc(100% - 100px); /* Adjust to leave space for arrows */
+  height: auto;
+  max-height: 400px; /* Adjust max-height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+/* Styles for pagination indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Styles for each individual pagination indicator */
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Active indicator style */
+.indicator.active {
+  background-color: #555;
+}
+
+/* Hover effect for inactive indicators */
+.indicator.inactive:hover {
+  transform: scale(1.2);
+}
